@@ -9,7 +9,7 @@ Submit final elegido: KA9150_s50_2000.csv
 ### Resumen
 
 Usé workflow oficial PredFinal/z739_final_senior.ipynb, con modificaciones que surgen de mi experimento colaborativo (Problema #12, Grupo B), con los resultados de experimentos de otros compañeros y con lo sugerido por el profesor en la última clase. 
-El workflow que corrí se llama v05_CARLOS_z739_final_senior.
+El workflow que corrí se llama v05_CARLOS_z739_final_senior y generó la carpeta WF 9150 con los archivos que se iban generando al correr el código (PARAM, BO_log, prediccion, etc). 
 
 ### Modificaciones respecto de z739_final_senior
 - En la sección del Data drifting, elegí el método deflacion. 
