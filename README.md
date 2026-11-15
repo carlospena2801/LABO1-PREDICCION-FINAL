@@ -4,17 +4,17 @@
 
 Alumno: Carlos Pena 
 Competencia: labo-1-virtual-2026-analista-jr 
-Submit final elegido: KA9110_s0_1700.csv
+Submit final elegido: KA9150_s50_2000.csv
 
 ### Resumen
 
 Usé workflow oficial PredFinal/z739_final_senior.ipynb, con modificaciones que surgen de mi experimento colaborativo (Problema #12, Grupo B), con los resultados de experimentos de otros compañeros y con lo sugerido por el profesor en la última clase. 
-El workflow que corrí se llama v01_CARLOS_z739_final_senior.
+El workflow que corrí se llama v05_CARLOS_z739_final_senior.
 
 ### Modificaciones respecto de z739_final_senior
-- En la sección del Data drifting, elegí el método rank_cero_fijo. 
-- En la sección de reducción de dimensionalidad con canaritos, mantuve el parámetro ratio en 0,2 pero el desvío lo definí en 1.
-- Las iteraciones de la OB las fijé en 300. 
+- En la sección del Data drifting, elegí el método deflacion. 
+- En la sección de reducción de dimensionalidad con canaritos, mantuve el parámetro ratio en 0,2 y el desvío en 2.
+- Las iteraciones de la OB las fijé en 500. 
 - En cuanto a la sección del HP Tuning, solo dejé para optimizar los 5 HP del baseline. Los rangos para esos 5 HP fueron (copio la celda del workflox para mostrar los rangos de cada HP): 
 
 PARAM$hipeparametertuning$hs <- makeParamSet(
@@ -24,5 +24,5 @@ makeNumericParam("learning_rate", lower= -7.0, upper= -0.1, trafo= function(x) 2
 makeNumericParam("feature_fraction", lower= 0.05, upper= 0.90),
 makeNumericParam("min_sum_hessian_in_leaf", lower= -10.0, upper= 10.0, trafo= function(x) 2^x)
 )
-- Apliqué un semillerío de 30
-- El rango de envíos a Kaggle fue de 1300 a 1700, cada 100. Para esto, utilicé el workflow adjunto llamado "v01_k_mod_AA_729_final" con el que guardé las predicciones de la corrida y  modifiqué, en la sección de las submissions a Kaggle, los cortes para definirlos entre 1300 y 1700. 
+- Apliqué un semillerío de 50
+
