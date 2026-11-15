@@ -13,7 +13,7 @@ la última clase.
 
 ### Modificaciones respecto de z739_final_senior
 - En la sección del Data drifting, elijo el método rank_cero_fijo. 
-- En la sección de reducción de dimensionalidad con canaritos, mantengo el parámetro ratio en 0,2 y pero el desvío lo defino en 1. 
+- En la sección de reducción de dimensionalidad con canaritos, mantengo el parámetro ratio en 0,2 pero el desvío lo defino en 1. 
 - En cuanto a la sección del HP Tuning, solo dejamos para optimizar los 5 HP del baseline. Los rangos para esos 5 HP fueron (copio la celda del workflox para mostrar los rangos de cada HP): 
 
 PARAM$hipeparametertuning$hs <- makeParamSet(
