@@ -12,9 +12,10 @@ Usé workflow oficial PredFinal/z739_final_senior.ipynb, con modificaciones que 
 El workflow que corrí se llama v01_CARLOS_z739_final_senior.
 
 ### Modificaciones respecto de z739_final_senior
-- En la sección del Data drifting, elijo el método rank_cero_fijo. 
-- En la sección de reducción de dimensionalidad con canaritos, mantengo el parámetro ratio en 0,2 pero el desvío lo defino en 1. 
-- En cuanto a la sección del HP Tuning, solo dejamos para optimizar los 5 HP del baseline. Los rangos para esos 5 HP fueron (copio la celda del workflox para mostrar los rangos de cada HP): 
+- En la sección del Data drifting, elegí el método rank_cero_fijo. 
+- En la sección de reducción de dimensionalidad con canaritos, mantuve el parámetro ratio en 0,2 pero el desvío lo definí en 1.
+- Las iteraciones de la OB las fijé en 300. 
+- En cuanto a la sección del HP Tuning, solo dejé para optimizar los 5 HP del baseline. Los rangos para esos 5 HP fueron (copio la celda del workflox para mostrar los rangos de cada HP): 
 
 PARAM$hipeparametertuning$hs <- makeParamSet(
 makeNumericParam("num_iterations", lower= 2.0, upper= 10.0, trafo= function(x) round(2^x) ),
