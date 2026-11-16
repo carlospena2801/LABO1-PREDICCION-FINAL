@@ -9,10 +9,11 @@ Submit final elegido: KA9150_s50_2000.csv
 ### Resumen
 
 Usé workflow oficial PredFinal/z739_final_senior.ipynb, con modificaciones que surgen de mi experimento colaborativo (Problema #12, Grupo B), con los resultados de experimentos de otros compañeros y con lo sugerido por el profesor en la última clase. 
-El workflow que corrí se llama v05_CARLOS_z739_final_senior y generó la carpeta WF 9150 con los archivos que se iban generando al correr el código (PARAM, BO_log, prediccion, etc). 
+Hice algunas corridas, a las que llamé experimentos 9100, 9110, 9120, 9130, 9140 y 9150. En los experimentos que van del 9100 al 9140 hice pruebas cambiando el método del Data drifting (probé con rank_cero_fijo), el parámetro de desvío en la reducciónd e dimensionalidad con canritos (fijándolo en 1) y quitando numero_de_cliente y foto_mes.  
+El workflow fnal que corrí y con el que obtuve la mayor ganancia se llama v05_CARLOS_z739_final_senior y generó la carpeta WF 9150 con los archivos que se iban generando al avanzar el código (PARAM, BO_log, prediccion, etc). A continuación paso a indicar cuáles son las modificaciones con las que conformé el workflow del exeprimento 9150.
 
-### Modificaciones respecto de z739_final_senior
-- En la sección del Data drifting, elegí el método deflacion. 
+### Modificaciones introducidas al v05_CARLOS_z739_final_senior respecto de z739_final_senior
+- En la sección del Data drifting, mantuve el método deflacion. 
 - En la sección de reducción de dimensionalidad con canaritos, mantuve el parámetro ratio en 0,2 y el desvío en 2.
 - Las iteraciones de la OB las fijé en 500. 
 - En cuanto a la sección del HP Tuning, solo dejé para optimizar los 5 HP del baseline. Los rangos para esos 5 HP fueron (copio la celda del workflox para mostrar los rangos de cada HP): 
