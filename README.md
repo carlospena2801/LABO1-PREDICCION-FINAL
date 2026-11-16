@@ -9,7 +9,7 @@ Submit final elegido: KA9150_s50_2000.csv
 ### Resumen
 
 Usé workflow oficial PredFinal/z739_final_senior.ipynb, con modificaciones que surgen de mi experimento colaborativo (Problema #12, Grupo B), con los resultados de experimentos de otros compañeros y con lo sugerido por el profesor en la última clase. 
-Hice algunas corridas, a las que llamé experimentos 9100, 9110, 9120, 9130, 9140 y 9150. En los experimentos que van del 9100 al 9140 hice pruebas cambiando el método del Data drifting (probé con rank_cero_fijo), el parámetro de desvío en la reducciónd e dimensionalidad con canritos (fijándolo en 1) y quitando numero_de_cliente y foto_mes.  
+Hice algunas corridas, a las que llamé experimentos 9100, 9110, 9120, 9130, 9140 y 9150. En los experimentos que van del 9100 al 9140 hice pruebas cambiando el método del Data drifting (probé con rank_cero_fijo), el parámetro de desvío en la reducción de dimensionalidad con canaritos (fijándolo en 1), quitando numero_de_cliente y foto_mes y con un semillerio de 30.  
 El workflow fnal que corrí y con el que obtuve la mayor ganancia se llama v05_CARLOS_z739_final_senior y generó la carpeta WF 9150 con los archivos que se iban generando al avanzar el código (PARAM, BO_log, prediccion, etc). A continuación paso a indicar cuáles son las modificaciones con las que conformé el workflow del exeprimento 9150.
 
 ### Modificaciones introducidas al v05_CARLOS_z739_final_senior respecto de z739_final_senior
